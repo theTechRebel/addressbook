@@ -25,6 +25,9 @@ namespace AddressBook
         {
             string path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
             if (!Directory.Exists(path + "\\AddressBook"))
+                //Pamamonya ipapo :)
+                //ne GIT
+                //na Chibaba
                 Directory.CreateDirectory(path + "\\AddressBook");
             if (!File.Exists(path + "\\AddressBook\\settings.xml"))
                 File.Create(path + "\\AddressBook\\ settings.xml");
@@ -39,9 +42,6 @@ namespace AddressBook
             p.AdditionalNotes = textBox4.Text;
             people.Add(p);
             listView2.Items.Add(p.Name);
-            //listView1.
-
-            //clear fields
             ClearFields();
         }
 
